@@ -1,7 +1,4 @@
-http://www.bogotobogo.com/python/Flask/Python_Flask_HelloWorld_App_with_Apache_WSGI_Ubuntu14.php
-http://flask.pocoo.org/docs/0.12/
-https://realpython.com/blog/python/flask-by-example-part-2-postgres-sqlalchemy-and-alembic/
-http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/
+
 
 
 The original Catalog web app has now been launched on an amazon lightsail server using Ubuntu, Apache2, and several python packages including Flask, SQLAlchemy, etc.<br>
@@ -29,3 +26,14 @@ ssh grader@18.216.143.250 -p 2200 -i path-to-grader-ssh-key
 <a href="https://github.com/JPatrick9793/Udacity_Catalog_2_Ubuntu">Here</a> is a link to the modified Catalog repository, located on the server. This repo contains all of the htm and css templates, as well as the python files used to run the server.
 
 This repo also contains the necessary requirements.txt file which has all of the packages used in this app. Here is a link to the <a href="https://github.com/JPatrick9793/Udacity_Catalog_2_Ubuntu/blob/master/requirements.txt" target="_blank">requirements.txt</a> file contained within the aforementioned repo.
+
+### Third-Party Resources
+<a href="http://www.bogotobogo.com/python/Flask/Python_Flask_HelloWorld_App_with_Apache_WSGI_Ubuntu14.php">Here</a> Is a nice article by K Hong where he configures an apache2 server to run a simple Flask app which just outputs "Hello, Flask!".
+
+<a href="http://flask.pocoo.org/docs/0.12/">Here</a> Here is a link to Flask's documentation
+
+<a href="http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/">Here</a> is a link to the specific section of the Flask documentation which refers to deploying using mod_wsgi.
+
+<a href="https://realpython.com/blog/python/flask-by-example-part-2-postgres-sqlalchemy-and-alembic/">Here</a> is an article by RealPython which walks through setting up a Flask app that calculates word-frequency pairs based on the text from a given URL.
+
+<a href="http://flask-sqlalchemy.pocoo.org/2.3/">Here</a> is a link to the Documentation for Flsk-SQLAlchemy, which is a nice package included with Flask that simplifies sessions and querying. This helps with the problem of multi-threading, which apache2 mod_wsgi includes by default.
