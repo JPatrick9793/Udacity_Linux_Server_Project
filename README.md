@@ -4,21 +4,21 @@ https://realpython.com/blog/python/flask-by-example-part-2-postgres-sqlalchemy-a
 http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/
 
 
-The oroginal Catalog web app has now been launched on an amazon lightsail server using Ubuntu, Apache2, and several python packages including Flask, SQLAlchemy, etc.<br>
+The original Catalog web app has now been launched on an amazon lightsail server using Ubuntu, Apache2, and several python packages including Flask, SQLAlchemy, etc.<br>
 
-The site can be accessed with the URI:<br> 
+### The site can be accessed with the URI:<br> 
 http://18.216.143.250.nip.io/catalog
 
 The site connects through standard port 80.
 
-#### Why the "nip.io"?
+### Why the "nip.io"?
 According to GoogleAPIs:
 "Authorized redirect URIs
 For use with requests from a web server. This is the path in your application that users are redirected to after they have authenticated with Google. The path will be appended with the authorization code for access. Must have a protocol. Cannot contain URL fragments or relative paths. Cannot be a public IP address."
 
 connecting to the server using simply its public IP address is not allowed. Nip.io is a nifty site which maps any IP Address to a "wildcard" DNS. See <a href="http://nip.io/">Nip.io</a>. Now we can successfully use Google's OAuth2 service. Note: this is not ideal for true production applications, this is simply a work around to provide simple and easy access to Google's third party API without jumping trough the hoops for registering a true DNS.
 
-#### SSH access through port 22 has been disabled!
+### SSH access through port 22 has been disabled!
 In order to access the server, you must use port "2200".
 The ssh key for a user "grader" has been provided. In order to access the server as "grader" you can enter the following in the command line:
 
