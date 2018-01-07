@@ -25,3 +25,7 @@ The ssh key for a user "grader" has been provided. In order to access the server
 ssh grader@18.216.143.250 -p 2200 -i path-to-grader-ssh-key
 (where "path-to-grader-ssh-key" is the absolute or relative directory path to the ssh key contained within this repository"
 
+### Requirments
+<a href="https://github.com/JPatrick9793/Udacity_Catalog_2_Ubuntu">Here</a> is a link to the modified Catalog repository, located on the server. This repo contains all of the htm and css templates, as well as the python files used to run the server.
+
+This repo also contains the necessary requirements.txt file which has all of the packages used in this app. Here is a link to the <a href="https://github.com/JPatrick9793/Udacity_Catalog_2_Ubuntu/blob/master/requirements.txt">requirements.txt</a> file contained within the aforementioned repo.
